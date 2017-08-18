@@ -66,15 +66,14 @@
 
 <script>
   import Firebase from 'firebase'
-  var env = require('../config/dev.env.js')
   let config = {
     // your firebase config snippet 
-    apiKey: env.API_KEY,
-    authDomain: env.AUTH_DOMAIN,
-    databaseURL: env.DATABASE_URL,
-    projectId: env.PROJECT_ID,
-    storageBucket: env.STORAGE_BUCKET,
-    messagingSenderId: env.MESSAGING_SENDER_ID
+    apiKey: '<your-api-key>',
+    authDomain: '<your-auth-domain>',
+    databaseURL: '<your-database-url>',
+    projectId: "<your-project-id>",
+    storageBucket: '<your-storage-bucket>',
+    messagingSenderId: '<your-sender-id>'
   }
 
   let app = Firebase.initializeApp(config);
